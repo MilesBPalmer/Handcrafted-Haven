@@ -18,6 +18,7 @@ html {
   --Green: #009b4d;
   --Yellow: #ffcc00;
   --Ivory: #faf5e9;
+  --Indigo: #4b0082;
 }
 
 body {
@@ -28,7 +29,7 @@ body {
 
 .homeWelcome {
   font-size: 3rem;
-  padding: 20px;
+  padding: 25px;
   text-align: center;
   color: var(--Yellow);
 }
@@ -38,4 +39,20 @@ body {
   text-align: center;
   width: 500px;
   margin: auto;
+}
+
+.menu {
+  text-align: center;
+  font-size: 35px;
+  padding: 10px;
+}
+
+.menu li {
+  list-style-type: none;
+  display: inline;
+  margin: 10px;
+}
+
+.hero {
+  text-align: center;
 }
