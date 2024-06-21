@@ -1,0 +1,41 @@
+/* This applies to everything is CSS and resets the margin and padding to 0, Border-box makes it so if you set a size for a element it will be exactly what you specified, pseudo elements also included*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  background-image: url(/Img/Woodenbackground.jpg); /*Add this for some character and handmade feel(can be changed or removed)*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*I was thinking of a colour theme through out the website using these colours*/
+:root {
+  --Green: #009b4d;
+  --Yellow: #ffcc00;
+  --Ivory: #faf5e9;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  color: var(--Ivory);
+}
+
+.homeWelcome {
+  font-size: 3rem;
+  padding: 20px;
+  text-align: center;
+  color: var(--Yellow);
+}
+
+.havenSlogan {
+  font-size: 30px;
+  text-align: center;
+  width: 500px;
+  margin: auto;
+}
