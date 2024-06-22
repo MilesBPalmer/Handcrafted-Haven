@@ -27,6 +27,11 @@ body {
   color: var(--Ivory);
 }
 
+#wrapper {
+  outline-style: solid;
+  outline-color: #009b4d;
+}
+
 .homeWelcome {
   font-size: 3rem;
   padding: 25px;
