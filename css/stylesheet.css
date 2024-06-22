@@ -29,20 +29,51 @@ body {
   margin: auto;
 }
 
+.handCraftImg {
+  display: flex;
+  justify-content: center;
+}
+
 ul.menuLinks {
   display: flex;
   justify-content: center;
   justify-content: space-around;
+  font-size: 0.5em;
+  padding: 10px;
+  margin: 20px;
 }
 
-#wrapper {
-  outline-style: solid;
-  outline-color: #009b4d;
+nav.menu {
+  background-color: var(--Ivory);
+  width: 1020px;
+  border-radius: 10px;
 }
 
-img.cartIMG {
-  height: 35px;
-  width: 30px;
+.link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--Yellow);
+}
+.cartIMG {
+  display: block;
+  width: 60px;
+  height: auto;
+  position: absolute;
+  top: 300px;
+  right: 400px;
+}
+
+.anchorCart {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.checkout {
+  display: flex;
+  justify-content: flex-end;
 }
 .homeWelcome {
   font-size: 5rem;
@@ -56,18 +87,17 @@ img.cartIMG {
   text-align: center;
   width: 500px;
   margin: auto;
+  padding: 10px;
 }
 
 .menu {
   text-align: center;
   font-size: 35px;
-  padding: 10px;
 }
 
 .menu li {
   list-style-type: none;
   display: inline;
-  margin: 10px;
 }
 
 .hero {
