@@ -1,37 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0" />
+    <title>Handcrafted Haven</title>
+    <!--Linked google font, Roboto for a easier reading experience-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/css/stylesheet.css" rel="stylesheet" />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,  initial-scale=1.0">
-	<title>Shop</title>
-	<link href="css/stylesheet.css" rel="stylesheet">
-</head>
-
-<body>
+  <body>
     <a id="Top"></a>
-	<div id="wrapper">
+    <div id="wrapper">
+      <header class="banner">
+        <!--The main heading for the webpage -->
+        <h1 class="homeWelcome">Welcome to Handcrafted Haven</h1>
+        <h2 class="havenSlogan">
+          Love all things handcraft? so do we! please browse our affordable
+          handcrafts!
+        </h2>
+      </header>
 
-		<header class="banner"><!--The main heading for the webpage -->
-			<h1>Feel free to browse our assortment of items.</h1>
-			<h2>We have a large range of items to buy please leisurely look for the items you desire.</h2>
-		</header>
+      <nav class="menu">
+        <!--The primary navigation for the page -->
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="cart.html"
+              ><img src="/Img/cart1.png" height="70px" width="60px"
+            /></a>
+          </li>
+        </ul>
+      </nav>
 
-		<nav class="menu"><!--The primary navigation for the page -->
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="shop.html">Shop</a></li>
-				<li><a href="aboutus.html">About Us</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="cart.html">Cart</a></li>
-			</ul>
-		</nav>
+      <main>
+        <!--The main heading for the handcraft webpage -->
+        <img
+          id="img-assortment"
+          src="/Img/assortmenthandcrafts.png"
+          height="870px"
+          alt="Assortment of handcrafted items"
+        />
 
-	<main><!--The main heading for the handcraft webpage -->
-
-		
-
-	</main><!--Close the main heading for the handcraft webpage-->
-	
-	</div>
-</body>
+        <nav>
+          <h3>Please pick a product:</h3>
+          <ol>
+            <li><a href="#featuredproducts">Featured Products</a></li>
+            <li><a href="#woodproducts">Wood Products</a></li>
+            <li><a href="#plasticproducts">Plastic Products</a></li>
+            <li><a href="#toyproducts">Toy Products</a></li>
+            <li><a href="#classicproducts">Classic Products</a></li>
+            <li><a href="#rareproducts">Rare Products</a></li>
+          </ol>
+        </nav>
+      </main>
+      <!--Close the main heading for the handcraft webpage-->
+    </div>
+  </body>
+</html>
