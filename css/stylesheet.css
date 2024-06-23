@@ -10,8 +10,7 @@
 html {
   font-family: "Roboto", sans-serif;
   background-image: url(/Img/Woodenbackground.jpg); /*Add this for some character and handmade feel(can be changed or removed)*/
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat repeat;
 }
 /*I was thinking of a colour theme through out the website using these colours*/
 :root {
@@ -25,7 +24,6 @@ body {
   display: flex;
   justify-content: center;
   color: var(--Ivory);
-  width: 1020px;
   margin: auto;
 }
 
@@ -48,10 +46,18 @@ input[type="text"]:focus {
   width: 100%;
 }
 
-.banner {
-  position: relative;
+#wrapper {
+  max-width: 1080px;
+  position: absolute;
+  top: 40px;
+}
+
+header.banner {
+  height: auto;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
   background-image: url(/Img/Handcraftedimg.jpg);
-  border-radius: 4%;
 }
 
 ul.menuLinks {
@@ -60,13 +66,13 @@ ul.menuLinks {
   justify-content: space-around;
   font-size: 0.5em;
   padding: 10px;
-  margin: 20px;
 }
 
-nav.menu {
+.menu {
+  position: absolute;
+  top: 0;
   background-color: var(--Ivory);
-  width: 1020px;
-  border-radius: 10px;
+  width: 100%;
 }
 
 .link {
