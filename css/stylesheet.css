@@ -51,16 +51,7 @@ input[type="text"]:focus {
 .banner {
   position: relative;
   background-image: url(/Img/Handcraftedimg.jpg);
-}
-
-.handCraftImg {
-  display: flex;
-  justify-content: center;
-}
-.handCraftImg img {
-  width: 100%;
-  height: auto;
-  border-radius: 25%;
+  border-radius: 4%;
 }
 
 ul.menuLinks {
@@ -119,7 +110,9 @@ a:hover {
   width: 500px;
   margin: auto;
   padding: 15px;
-  color: var(--Indigo);
+  color: var(--Yellow);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 /*Primary navigational menu for website*/
