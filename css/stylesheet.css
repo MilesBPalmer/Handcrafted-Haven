@@ -87,14 +87,16 @@ a:hover {
   text-align: center;
   width: 500px;
   margin: auto;
-  padding: 10px;
+  padding: 15px;
+  color: var(--Indigo);
 }
 
+/*Primary navigational menu for website*/
 .menu {
   text-align: center;
   font-size: 35px;
 }
-
+/*Primary navigational menu list items*/
 .menu li {
   list-style-type: none;
   display: inline;
@@ -105,4 +107,37 @@ a:hover {
 }
 .pickProduct {
   list-style-type: none;
+}
+
+/*Assortment of items img used in shop*/
+#img-assortment {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+/*Shop Image Gallery Code*/
+.gallery {
+  margin: 5px;
+  border: 1px solid #ffcc00;
+  border-radius: 10%;
+  float: left;
+  width: 24%;
+}
+
+.gallery:hover {
+  border: 1px solid #009b4d;
+}
+
+.gallery img {
+  border-radius: 25%;
+  width: 100%;
+  height: 250px;
+}
+
+.galleryDesc {
+  padding: 15px;
+  text-align: center;
 }
