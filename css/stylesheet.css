@@ -126,7 +126,7 @@ a:hover {
 /*Shop Image Gallery Code*/
 .gallery {
   margin: 5px;
-  border: 1px solid #ffcc00;
+  border: 1px;
   border-radius: 10%;
   float: left;
   width: 24%;
