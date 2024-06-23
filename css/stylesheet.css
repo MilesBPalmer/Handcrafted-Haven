@@ -33,6 +33,11 @@ body {
   display: flex;
   justify-content: center;
 }
+.handCraftImg img {
+  width: 100%;
+  height: auto;
+  border-radius: 25%;
+}
 
 ul.menuLinks {
   display: flex;
