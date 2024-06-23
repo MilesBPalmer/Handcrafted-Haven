@@ -54,10 +54,13 @@ input[type="text"]:focus {
 
 header.banner {
   height: auto;
-  background-size: 50%;
+  width: 100%;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(/Img/Handcraftedimg.jpg);
+  border-bottom-left-radius: 10%;
+  border-top-right-radius: 10%;
 }
 
 ul.menuLinks {
