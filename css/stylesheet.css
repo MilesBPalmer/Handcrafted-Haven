@@ -45,32 +45,56 @@ input[type="text"] {
 }
 /*Search bar width*/
 input[type="text"]:focus {
-  width: 100%;
+  width: 25%;
 }
 
 .banner {
   position: relative;
   background-image: url(/Img/Handcraftedimg.jpg);
   border-radius: 4%;
+  background-repeat: no-repeat;
+}
+
+.menu {
+  position: relative;
+}
+
+.menuLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+}
+
+.menuLinks input {
+  margin-right: auto; /* Pushes the input field to the far left */
+}
+
+.menuLinks li:first-child {
+  position: absolute; /* Position the first child absolutely */
+  left: 0; /* Align it to the very left side */
+}
+
+.menuLinks li {
+  margin-left: 20px; /* Add space between menu items */
 }
 
 ul.menuLinks {
   display: flex;
   justify-content: center;
-  justify-content: space-around;
   font-size: 0.5em;
   padding: 10px;
-  margin: 20px;
 }
 
 nav.menu {
   background-color: var(--Ivory);
-  width: 1020px;
-  border-radius: 10px;
+  width: 2400px;
 }
 
 .link {
   text-decoration: none;
+  padding: 80px;
 }
 
 a:hover {
