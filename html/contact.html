@@ -1,37 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0" />
+    <title>Handcrafted Haven</title>
+    <!--Linked google font, Roboto for a easier reading experience-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/css/stylesheet.css" rel="stylesheet" />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,  initial-scale=1.0">
-	<title>Contact</title>
-	<link href="css/stylesheet.css" rel="stylesheet">
-</head>
-
-<body>
+  <body class="contactBody">
     <a id="Top"></a>
-	<div id="wrapper">
+    <div id="wrapper">
+      <header class="banner">
+        <!--The main heading for the webpage -->
+        <h1>Contact Us</h1>
+        <h2>We would love to hear from you!</h2>
+      </header>
 
-		<header class="banner"><!--The main heading for the webpage -->
-			<h1>Contact Us</h1>
-			<h2>We would love to hear from you!</h2>
-		</header>
+      <nav class="menu">
+        <!--The primary navigation for the page -->
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </nav>
 
-		<nav class="menu"><!--The primary navigation for the page -->
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="shop.html">Shop</a></li>
-				<li><a href="aboutus.html">About Us</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="cart.html">Cart</a></li>
-			</ul>
-		</nav>
+      <main>
+        <!--The main heading for the handcraft webpage -->
 
-	<main><!--The main heading for the handcraft webpage -->
+        <h3>Making a contact form.</h3>
+        <div id="contactForm">
+          <form action="/action_page.php">
+            <label for="fName">First Name:</label>
+            <input
+              type="contactText"
+              id="fName"
+              name="firstname"
+              placeholder="Your first name..."
+            />
 
-		
+            <label for="lName">Last Name</label>
+            <input
+              type="contactText"
+              id="lName"
+              name="lastname"
+              placeholder="Your last name..."
+            />
 
-	</main><!--Close the main heading for the handcraft webpage-->
-	
-	</div>
-</body>
+            <label for="email">Email Address</label>
+            <input
+              type="contactText"
+              id="email"
+              name="email"
+              placeholder="Your Email Address..."
+            />
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+              <option value="england">England</option>
+              <option value="scotland">Scotland</option>
+              <option value="wales">Wales</option>
+              <option value="ireland">Northern Ireland</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something..."
+              style="height: 200px"></textarea>
+            
+			
+		</textarea>
+
+            <input type="contactSubmit" value="Submit" />
+          </form>
+        </div>
+      </main>
+      <!--Close the main heading for the handcraft webpage-->
+    </div>
+  </body>
+</html>
