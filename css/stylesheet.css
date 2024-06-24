@@ -1,4 +1,9 @@
 /* This applies to everything is CSS and resets the margin and padding to 0, Border-box makes it so if you set a size for a element it will be exactly what you specified, pseudo elements also included*/
+
+/* END Main Page information*/ /* Main Page information*/
+/* Main Page information*/ /* Main Page information*/
+/* Main Page information*/ /* Main Page information*/
+
 *,
 *::before,
 *::after {
@@ -9,16 +14,27 @@
 
 html {
   font-family: "Roboto", sans-serif;
-  background-image: url(/Img/Woodenbackground.jpg); /*Add this for some character and handmade feel(can be changed or removed)*/
+  background-image: url(/Img/Woodenbackground.jpg);
   background-repeat: repeat repeat;
 }
-/*I was thinking of a colour theme through out the website using these colours*/
+
+/*Site colour theme */
 :root {
   --Green: #009b4d;
   --Yellow: #ffcc00;
   --Ivory: #faf5e9;
   --Indigo: #4b0082;
 }
+
+/* END Main Page information*/
+/* END Main Page information*/
+/* END Main Page information*/
+
+/* /////////////////////////////////////////////////////////////////// */
+
+/* Main Body */ /* Main Body */
+/* Main Body */ /* Main Body */
+/* Main Body */ /* Main Body */
 
 body {
   display: flex;
@@ -27,29 +43,46 @@ body {
   margin: auto;
 }
 
-/*Search bar function*/
-input[type="text"] {
-  width: 130px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-image: url("searchicon.png");
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding: 10px 20px 12px 40px;
-  transition: width 0.4s ease-in-out;
-}
-/*Search bar width*/
-input[type="text"]:focus {
-  width: 100%;
-}
-
 #wrapper {
   max-width: 1080px;
   position: absolute;
   top: 40px;
+}
+
+/* /////////////////////////////////////////////////////////////////// */
+
+/* Navbar */ /* Navbar */
+/* Navbar */ /* Navbar */
+/* Navbar */ /* Navbar */
+
+/*Search bar function*/
+input[type="text"] {
+  width: 160px;
+  height: 30px;
+  padding: 1px 0 0 12px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+  background-color: white;
+  background-image: url("searchicon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  transition: width 0.4s ease-in-out;
+  justify-content: flex-start;
+  color: var(--Indigo);
+}
+
+/* Position search */
+input[type="text"] {
+  position: absolute;
+  top: 6px;
+  left: 5px;
+}
+
+/*Search bar width*/
+input[type="text"]:focus {
+  width: 20%;
 }
 
 header.banner {
@@ -63,25 +96,54 @@ header.banner {
 ul.menuLinks {
   display: flex;
   justify-content: center;
-  justify-content: space-around;
-  font-size: 0.5em;
+  font-size: 0.6em;
   padding: 10px;
-}
-
-.menu {
-  position: absolute;
-  top: 0;
-  background-color: var(--Ivory);
-  width: 100%;
+  max-height: 50px;
+  width: 100vw;
 }
 
 .link {
   text-decoration: none;
+  padding: 10px;
+  margin: 0 50px 0 50px;
 }
 
 a:hover {
   color: var(--Yellow);
 }
+
+/*Primary navigational menu for website*/
+.menu {
+  top: 0;
+  background-color: var(--Ivory);
+  text-align: center;
+  font-size: 35px;
+}
+/*Primary navigational menu list items*/
+.menu li {
+  list-style-type: none;
+  display: inline;
+}
+
+/* End Navbar */ /* End Navbar */
+/* End Navbar */ /* End Navbar */
+/* End Navbar */ /* End Navbar */
+
+/* /////////////////////////////////////////////////////////////////// */
+
+/* Banner */ /* Banner */
+/* Banner */ /* Banner */
+/* Banner */ /* Banner */
+
+.homeWelcome {
+  font-size: 5rem;
+  padding: 25px;
+  text-align: center;
+  color: var(--Yellow);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
 .cartIMG {
   display: block;
   width: 60px;
@@ -101,14 +163,6 @@ a:hover {
   display: flex;
   justify-content: flex-end;
 }
-.homeWelcome {
-  font-size: 5rem;
-  padding: 25px;
-  text-align: center;
-  color: var(--Yellow);
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
-}
 
 .havenSlogan {
   font-size: 30px;
@@ -121,16 +175,15 @@ a:hover {
     1px 1px 0 #000;
 }
 
-/*Primary navigational menu for website*/
-.menu {
-  text-align: center;
-  font-size: 35px;
-}
-/*Primary navigational menu list items*/
-.menu li {
-  list-style-type: none;
-  display: inline;
-}
+/* END Banner */ /* END Banner */
+/* END Banner */ /* END Banner */
+/* END Banner */ /* END Banner */
+
+/* /////////////////////////////////////////////////////////////////// */
+
+/* Main section */ /* Main section */
+/* Main section */ /* Main section */
+/* Main section */ /* Main section */
 
 .hero {
   text-align: center;
@@ -177,3 +230,8 @@ a:hover {
   padding: 15px;
   text-align: center;
 }
+/*END Gallery*/
+
+/* END Main BODY */ /* END Main BODY */
+/* END Main BODY */ /* END Main BODY */
+/* END Main BODY */ /* END Main BODY */
