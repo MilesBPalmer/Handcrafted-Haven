@@ -55,6 +55,15 @@ body {
 /* Navbar */ /* Navbar */
 /* Navbar */ /* Navbar */
 
+.handCraftLogo {
+  position: absolute;
+  height: auto;
+  width: 40px;
+  top: 2px;
+  left: 10px;
+  border-radius: 60px;
+}
+
 /*Search bar function*/
 input[type="text"] {
   width: 160px;
@@ -77,7 +86,7 @@ input[type="text"] {
 input[type="text"] {
   position: absolute;
   top: 6px;
-  left: 5px;
+  right: 50px;
 }
 
 /*Search bar width*/
@@ -101,16 +110,27 @@ ul.menuLinks {
   max-height: 50px;
   width: 100vw;
 }
+/* Anchor stlying */ /* Anchor stlying */
+a {
+  color: #000;
+}
+
+a :visited {
+  background-color: var(--Indigo);
+}
+
+a :hover {
+  background-color: var(--Yellow);
+  border-radius: 50px;
+  width: 100%;
+}
 
 .link {
   text-decoration: none;
-  padding: 10px;
+  padding: 10px 15px 10px 15px;
   margin: 0 50px 0 50px;
 }
-
-a:hover {
-  color: var(--Yellow);
-}
+/* END anchor stlying */ /* END anchor stlying */
 
 /*Primary navigational menu for website*/
 .menu {
@@ -145,23 +165,11 @@ a:hover {
 }
 
 .cartIMG {
-  display: block;
-  width: 60px;
-  height: auto;
   position: absolute;
-  top: 300px;
-  right: 400px;
-}
-
-.anchorCart {
-  display: block;
-  padding: 0;
-  margin: 0;
-}
-
-.checkout {
-  display: flex;
-  justify-content: flex-end;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: auto;
 }
 
 .havenSlogan {
