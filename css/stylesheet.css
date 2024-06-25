@@ -36,64 +36,108 @@ html {
 /* Main Body */ /* Main Body */
 /* Main Body */ /* Main Body */
 
-body {
+/* Navbar */ /* Navbar */
+/* Navbar */ /* Navbar */
+/* Navbar */ /* Navbar */
+
+/*Primary navigational menu for website*/
+.navbar {
   display: flex;
-  justify-content: center;
-  color: var(--Ivory);
-  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e8e8e4;
+  background-color: var(--Ivory);
+  max-height: 50px;
+  width: 100%;
 }
 
-#wrapper {
-  max-width: 1080px;
-  position: absolute;
-  top: 40px;
-}
-
-/* /////////////////////////////////////////////////////////////////// */
-
-/* Navbar */ /* Navbar */
-/* Navbar */ /* Navbar */
-/* Navbar */ /* Navbar */
-
-.handCraftLogo {
-  position: absolute;
-  height: auto;
-  width: 40px;
-  top: 2px;
-  left: 10px;
+.navbar-left .logo {
+  height: 40px;
   border-radius: 60px;
 }
 
-/*Search bar function*/
-input[type="text"] {
-  width: 160px;
-  height: 30px;
-  padding: 1px 0 0 12px;
-  box-sizing: border-box;
+.navbar-center {
+  text-align: center;
+  width: 50%;
+  margin-left: 8em;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar.links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navbar-links a {
+  color: #000;
+  text-decoration: none;
+  /* font-size: 18px; */
+}
+
+navbar-links a:hover {
+  background-color: var(--Yellow);
+  border-radius: 50px;
+  width: 100%;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+/*Primary navigational menu list items*/
+.navbar li {
+  list-style-type: none;
+}
+
+.search {
+  padding: 5px 5px 5px 15px;
+  font-size: 16px;
   border: 2px solid #ccc;
-  border-radius: 20px;
-  font-size: 14px;
-  background-color: white;
-  background-image: url("searchicon.png");
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  transition: width 0.4s ease-in-out;
-  justify-content: flex-start;
-  color: var(--Indigo);
+  border-radius: 30px;
 }
 
-/* Position search */
-input[type="text"] {
-  position: absolute;
-  top: 6px;
-  right: 50px;
-}
-
-/*Search bar width*/
-input[type="text"]:focus {
+.search:focus {
   width: 20%;
 }
 
+.icon-cart {
+  height: auto;
+  width: 30px;
+  margin: 0 10px 0 10px;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #777;
+}
+
+/* End Navbar */ /* End Navbar */
+/* End Navbar */ /* End Navbar */
+/* End Navbar */ /* End Navbar */
+
+/* /////////////////////////////////////////////////////////////////// */
+
+/* Banner */ /* Banner */
+/* Banner */ /* Banner */
+/* Banner */ /* Banner */
 header.banner {
   height: auto;
   background-size: 50%;
@@ -102,59 +146,6 @@ header.banner {
   background-image: url(/Img/Handcraftedimg.jpg);
 }
 
-ul.menuLinks {
-  display: flex;
-  justify-content: center;
-  font-size: 0.6em;
-  padding: 10px;
-  max-height: 50px;
-  width: 100vw;
-}
-/* Anchor stlying */ /* Anchor stlying */
-a {
-  color: #000;
-}
-
-a:visited {
-  background-color: var(--Indigo);
-}
-
-a:hover {
-  background-color: var(--Yellow);
-  border-radius: 50px;
-  width: 100%;
-}
-
-.link {
-  text-decoration: none;
-  padding: 10px 15px 10px 15px;
-  margin: 0 50px 0 50px;
-}
-/* END anchor stlying */ /* END anchor stlying */
-
-/*Primary navigational menu for website*/
-.menu {
-  top: 0;
-  background-color: var(--Ivory);
-  text-align: center;
-  font-size: 35px;
-}
-/*Primary navigational menu list items*/
-.menu li {
-  list-style-type: none;
-  display: inline;
-}
-
-/* End Navbar */ /* End Navbar */
-/* End Navbar */ /* End Navbar */
-/* End Navbar */ /* End Navbar */
-
-/* /////////////////////////////////////////////////////////////////// */
-
-/* Banner */ /* Banner */
-/* Banner */ /* Banner */
-/* Banner */ /* Banner */
-
 .homeWelcome {
   font-size: 5rem;
   padding: 25px;
@@ -162,14 +153,6 @@ a:hover {
   color: var(--Yellow);
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
-}
-
-.cartIMG {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 30px;
-  height: auto;
 }
 
 .havenSlogan {
