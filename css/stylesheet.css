@@ -115,11 +115,11 @@ a {
   color: #000;
 }
 
-a :visited {
+a:visited {
   background-color: var(--Indigo);
 }
 
-a :hover {
+a:hover {
   background-color: var(--Yellow);
   border-radius: 50px;
   width: 100%;
