@@ -89,8 +89,6 @@ html {
   text-decoration: underline;
 }
 
-
-
 .navbar-right {
   display: flex;
   align-items: center;
@@ -104,12 +102,14 @@ html {
 .search {
   padding: 5px 5px 5px 15px;
   font-size: 16px;
-  border: 2px none #ccc;
+  background-color: rgba(206, 204, 204, 0.897);
   border-radius: 30px;
+  border-width: 2px;
+  border-style: none;
+  flex: 1;
 }
-
 .search:focus {
-  width: 48%;
+  width: 40%;
 }
 
 .icon-cart {
@@ -233,7 +233,6 @@ header.banner {
 /* END Main BODY */ /* END Main BODY */
 /* END Main BODY */ /* END Main BODY */
 
-
 /*Contact Us Page*/
 input[type="contactText"],
 select,
@@ -267,4 +266,3 @@ input[type="contactSubmit"]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
-
