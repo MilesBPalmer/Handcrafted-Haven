@@ -1,4 +1,9 @@
 /* This applies to everything is CSS and resets the margin and padding to 0, Border-box makes it so if you set a size for a element it will be exactly what you specified, pseudo elements also included*/
+
+/* END Main Page information*/ /* Main Page information*/
+/* Main Page information*/ /* Main Page information*/
+/* Main Page information*/ /* Main Page information*/
+
 *,
 *::before,
 *::after {
@@ -9,10 +14,11 @@
 
 html {
   font-family: "Roboto", sans-serif;
-  background-image: url(/Img/Woodenbackground.jpg); /*Add this for some character and handmade feel(can be changed or removed)*/
+  background-image: url(/Img/Woodenbackground.jpg);
   background-repeat: repeat repeat;
 }
-/*I was thinking of a colour theme through out the website using these colours*/
+
+/*Site colour theme */
 :root {
   --Green: #009b4d;
   --Yellow: #ffcc00;
@@ -20,90 +26,132 @@ html {
   --Indigo: #4b0082;
 }
 
-body {
+/* END Main Page information*/
+/* END Main Page information*/
+/* END Main Page information*/
+
+/* /////////////////////////////////////////////////////////////////// */
+
+/* Main Body */ /* Main Body */
+/* Main Body */ /* Main Body */
+/* Main Body */ /* Main Body */
+
+/* Navbar */ /* Navbar */
+/* Navbar */ /* Navbar */
+/* Navbar */ /* Navbar */
+
+/*Primary navigational menu for website*/
+.navbar {
   display: flex;
-  justify-content: center;
-  color: var(--Ivory);
-  margin: auto;
-}
-
-/*Search bar function*/
-input[type="text"] {
-  width: 130px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-image: url("searchicon.png");
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding: 10px 20px 12px 40px;
-  transition: width 0.4s ease-in-out;
-}
-/*Search bar width*/
-input[type="text"]:focus {
-  width: 100%;
-}
-
-#wrapper {
-  max-width: 1080px;
-  position: absolute;
-  top: 40px;
-}
-
-header.banner {
-  height: auto;
-  width: 100%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(/Img/Handcraftedimg.jpg);
-  border-bottom-left-radius: 10%;
-  border-top-right-radius: 10%;
-}
-
-ul.menuLinks {
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-  font-size: 0.5em;
-  padding: 10px;
-}
-
-.menu {
-  position: absolute;
-  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e8e8e4;
   background-color: var(--Ivory);
+  max-height: 50px;
   width: 100%;
 }
 
-.link {
-  text-decoration: none;
+.navbar-left .logo {
+  height: 40px;
+  border-radius: 60px;
+  margin: 3px 0 0 10px;
 }
 
-a:hover {
-  color: var(--Yellow);
-}
-.cartIMG {
-  display: block;
-  width: 60px;
-  height: auto;
-  position: absolute;
-  top: 300px;
-  right: 400px;
+.navbar-center {
+  text-align: center;
+  width: 50%;
+  margin-left: 8em;
+  font-size: 1.2em;
 }
 
-.anchorCart {
-  display: block;
+.navbar-links {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.checkout {
-  display: flex;
-  justify-content: flex-end;
+.navbar.links li {
+  display: inline;
+  margin: 0 15px;
 }
+
+.navbar-links a {
+  color: #000;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.navbar-links a:hover {
+  background-color: var(--Yellow);
+  text-decoration: underline;
+}
+
+
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+/*Primary navigational menu list items*/
+.navbar li {
+  list-style-type: none;
+}
+
+.search {
+  padding: 5px 5px 5px 15px;
+  font-size: 16px;
+  border: 2px none #ccc;
+  border-radius: 30px;
+}
+
+.search:focus {
+  width: 48%;
+}
+
+.icon-cart {
+  height: auto;
+  width: 30px;
+  margin: 0 10px 0 10px;
+  cursor: pointer;
+}
+
+/* Controls the buttons on the nav bar */
+.btn {
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 7.2px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: var(--Yellow);
+  border-radius: 10px;
+  color: white;
+}
+
+/* End Navbar */ /* End Navbar */
+/* End Navbar */ /* End Navbar */
+/* End Navbar */ /* End Navbar */
+
+/* /////////////////////////////////////////////////////////////////// */
+
+/* Banner */ /* Banner */
+/* Banner */ /* Banner */
+/* Banner */ /* Banner */
+header.banner {
+  height: auto;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/Img/Handcraftedimg.jpg);
+}
+
 .homeWelcome {
   font-size: 5rem;
   padding: 25px;
@@ -124,16 +172,15 @@ a:hover {
     1px 1px 0 #000;
 }
 
-/*Primary navigational menu for website*/
-.menu {
-  text-align: center;
-  font-size: 35px;
-}
-/*Primary navigational menu list items*/
-.menu li {
-  list-style-type: none;
-  display: inline;
-}
+/* END Banner */ /* END Banner */
+/* END Banner */ /* END Banner */
+/* END Banner */ /* END Banner */
+
+/* /////////////////////////////////////////////////////////////////// */
+
+/* Main section */ /* Main section */
+/* Main section */ /* Main section */
+/* Main section */ /* Main section */
 
 .hero {
   text-align: center;
@@ -180,6 +227,12 @@ a:hover {
   padding: 15px;
   text-align: center;
 }
+/*END Gallery*/
+
+/* END Main BODY */ /* END Main BODY */
+/* END Main BODY */ /* END Main BODY */
+/* END Main BODY */ /* END Main BODY */
+
 
 /*Contact Us Page*/
 input[type="contactText"],
@@ -214,3 +267,4 @@ input[type="contactSubmit"]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
