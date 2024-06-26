@@ -102,12 +102,18 @@ html {
 }
 
 .search {
-  padding: 5px 5px 5px 15px;
+  padding: 5px 5px 5px 40px;
   font-size: 16px;
-  background-color: rgba(206, 204, 204, 0.897);
+  background-color: rgba(215, 235, 193, 0.897);
   border-radius: 30px;
   border-width: 2px;
   border-style: none;
+}
+
+.search-icon {
+  width: 25px;
+  position: absolute;
+  margin-left: 5px;
 }
 
 .icon-cart {
