@@ -199,6 +199,10 @@ header.banner {
 }
 .pickProduct {
   list-style-type: none;
+  display: inline-flex;
+}
+.pickProduct li {
+  padding: 10px;
 }
 /* end of nav bar CSS */
 /* end of nav bar CSS */
@@ -213,11 +217,13 @@ header.banner {
 
 /*Assortment of items img used in shop*/
 #img-assortment {
-  border-radius: 30%;
+  border-radius: -30%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   height: auto;
+  width: auto;
+  opacity: 50%;
 }
 
 /*Shop Image Gallery Code*/
@@ -243,6 +249,57 @@ header.banner {
   padding: 15px;
   text-align: center;
 }
+
+/* Shop Price Table Code */
+/* Price Table Columns & Alignment */
+.priceTableColumns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+/* Price Table Unordered List & Items */
+.priceTableUL {
+  list-style-type: none;
+  border: 1px solid #e8e8e4;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3;
+}
+/* Hover Effect on Price Table */
+.priceTableUL:hover {
+  box-shadow: 0 8px 12px 10px rgba(0, 0, 0, 0.5);
+}
+/* Background Price Table Header - Basic, Pro, Premium */
+.priceTableUL .priceTableHeader {
+  background-color: var(--Green);
+  color: var(--Ivory);
+  font-size: 25px;
+}
+/* List Items and their Benefits  */
+.priceTableUL li {
+  border-bottom: 1px solid var(--Indigo);
+  padding: 20px;
+  text-align: center;
+  background-color: var(--Ivory);
+}
+/* Price of each column section */
+.priceTableUL .priceOfColumn {
+  background-color: var(--Yellow);
+  font-size: 20px;
+}
+/* Price Table Button properties */
+.priceTableButton {
+  background-color: var(--Green);
+  border: none;
+  color: var(--Yellow);
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 10%;
+}
+
 /*END Gallery*/
 
 /* END Main BODY */ /* END Main BODY */
