@@ -149,11 +149,13 @@ html {
 /* Banner */ /* Banner */
 /* Banner */ /* Banner */
 header.banner {
-  height: auto;
-  background-size: 50%;
+  height: 350px;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(/Img/Handcraftedimg.jpg);
+  border-bottom-left-radius: 80%;
+  border-bottom-right-radius: 80%;
 }
 
 .homeWelcome {
@@ -166,7 +168,7 @@ header.banner {
 }
 
 .havenSlogan {
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
   width: 500px;
   margin: auto;
@@ -197,6 +199,16 @@ header.banner {
 }
 .pickProduct {
   list-style-type: none;
+}
+/* end of nav bar CSS */
+/* end of nav bar CSS */
+/* end of nav bar CSS */
+
+/* content within the wrapper element */
+#wrapper {
+  width: 1280px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /*Assortment of items img used in shop*/
