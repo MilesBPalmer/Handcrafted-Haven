@@ -51,19 +51,21 @@ html {
   width: 100%;
 }
 
+/* Navbar that contains the logo, left side */
 .navbar-left .logo {
   height: 40px;
   border-radius: 60px;
   margin: 3px 0 0 10px;
 }
 
+/* Navbar that contains hyperlinks to other pages */
 .navbar-center {
   text-align: center;
   width: 50%;
   margin-left: 8em;
   font-size: 1.2em;
 }
-
+/* Links within the primary navbar */
 .navbar-links {
   display: flex;
   justify-content: space-evenly;
@@ -71,24 +73,24 @@ html {
   padding: 0;
   margin: 0;
 }
-
+/* Links within the primary navbar that are a list */
 .navbar.links li {
   display: inline;
   margin: 0 15px;
 }
-
+/* anchor tags within the primary navbar */
 .navbar-links a {
   color: #000;
   text-decoration: none;
   padding: 8px;
   border-radius: 10px;
 }
-
+/* anchor hover links */
 .navbar-links a:hover {
   background-color: var(--Yellow);
   text-decoration: underline;
 }
-
+/* navbar right containing search, sign in, reg */
 .navbar-right {
   display: flex;
   align-items: center;
