@@ -102,12 +102,12 @@ html {
 .search {
   padding: 5px 5px 5px 15px;
   font-size: 16px;
-  border: 2px solid #ccc;
+  border: 2px none #ccc;
   border-radius: 30px;
 }
 
 .search:focus {
-  width: 50%;
+  width: 48%;
 }
 
 .icon-cart {
@@ -117,11 +117,12 @@ html {
   cursor: pointer;
 }
 
+/* Controls the buttons on the nav bar */
 .btn {
   color: white;
   border: none;
   padding: 10px 15px;
-  margin-left: 10px;
+  margin-left: 7.2px;
   cursor: pointer;
   font-size: 16px;
 }
