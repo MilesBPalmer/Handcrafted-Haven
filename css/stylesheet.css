@@ -106,10 +106,6 @@ html {
   border-radius: 30px;
   border-width: 2px;
   border-style: none;
-  flex: 1;
-}
-.search:focus {
-  width: 40%;
 }
 
 .icon-cart {
