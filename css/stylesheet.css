@@ -24,6 +24,8 @@ html {
   --Yellow: #ffcc00;
   --Ivory: #faf5e9;
   --Indigo: #4b0082;
+  --gradient-indigo-green: linear-gradient(45deg, #009b4d, #4b0082);
+  --white-yellow: linear-gradient(180deg, #ffcc00, #faf5e9 90%);
 }
 
 /* END Main Page information*/
@@ -87,7 +89,7 @@ html {
 }
 /* anchor hover links */
 .navbar-links a:hover {
-  background-color: rgba(215, 235, 193, 0.897);
+  background-color: var(--Yellow);
   text-decoration: underline;
 }
 /* navbar right containing search, sign in, reg */
@@ -125,10 +127,9 @@ html {
 
 /* Controls the buttons on the nav bar */
 .btn {
-  background-color: none;
-  border-radius: 10px;
-  border: 1px solid #000;
-  padding: 5px 10px;
+  color: white;
+  border: none;
+  padding: 10px 15px;
   margin-left: 7.2px;
   cursor: pointer;
   font-size: 16px;
@@ -188,6 +189,11 @@ header.banner {
 /* Main section */ /* Main section */
 /* Main section */ /* Main section */
 /* Main section */ /* Main section */
+
+.navbar-product {
+  background-color: var(--Ivory);
+  border-radius: 2px;
+}
 
 .hero {
   text-align: center;
@@ -273,7 +279,7 @@ header.banner {
 }
 /* Background Price Table Header - Basic, Pro, Premium */
 .priceTableUL .priceTableHeader {
-  background-color: var(--Green);
+  background-image: var(--gradient-indigo-green);
   color: var(--Ivory);
   font-size: 25px;
 }
@@ -286,7 +292,7 @@ header.banner {
 }
 /* Price of each column section */
 .priceTableUL .priceOfColumn {
-  background-color: var(--Yellow);
+  background-image: var(--white-yellow);
   font-size: 20px;
 }
 /* Price Table Button properties */
