@@ -235,11 +235,36 @@ article {
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 2em;
   padding: 5px;
 }
 
+dt {
+  font-size: 2em;
+  padding: 10px;
+}
+
+hr {
+  border: 2px solid var(--Indigo);
+  margin: 15px;
+}
+
 p {
+  padding: 10px;
+}
+
+.img-description {
+  display: flex;
+}
+
+.img-description dd {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.featured-img {
+  border-radius: 30px;
+  width: 300px;
 }
 
 /*Assortment of items img used in shop*/
