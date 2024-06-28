@@ -26,6 +26,7 @@ html {
   --Indigo: #4b0082;
   --gradient-indigo-green: linear-gradient(45deg, #009b4d, #4b0082);
   --white-yellow: linear-gradient(180deg, #ffcc00, #faf5e9 90%);
+  --yellow-white: linear-gradient(3600deg, #ffcc00, #faf5e9 75%);
 }
 
 /* END Main Page information*/
@@ -294,6 +295,10 @@ header.banner {
 .priceTableUL .priceOfColumn {
   background-image: var(--white-yellow);
   font-size: 20px;
+}
+
+.priceOfColumn2 {
+  background-image: var(--yellow-white);
 }
 /* Price Table Button properties */
 .priceTableButton {
