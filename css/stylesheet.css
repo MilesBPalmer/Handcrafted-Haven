@@ -27,6 +27,7 @@ html {
   --gradient-indigo-green: linear-gradient(45deg, #009b4d, #4b0082);
   --white-yellow: linear-gradient(180deg, #ffcc00, #faf5e9 90%);
   --yellow-white: linear-gradient(3600deg, #ffcc00, #faf5e9 75%);
+  --border-bottom: 5px var(--Indigo) solid;
 }
 
 /* END Main Page information*/
@@ -157,8 +158,6 @@ header.banner {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(/Img/Handcraftedimg.jpg);
-  border-bottom-left-radius: 80%;
-  border-bottom-right-radius: 80%;
 }
 
 .homeWelcome {
@@ -193,10 +192,11 @@ header.banner {
 
 .navbar-product {
   background-color: var(--Ivory);
-  border-radius: 2px;
+  border-bottom: var(--border-bottom);
 }
 
 .hero {
+  background-color: var(--Ivory);
   text-align: center;
   font-size: 65px;
   color: var(--Yellow);
@@ -204,7 +204,9 @@ header.banner {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
   padding: 20px;
+  border-top: 5px var(--Indigo) solid;
 }
+
 .pickProduct {
   list-style-type: none;
   display: inline-flex;
@@ -221,6 +223,23 @@ header.banner {
   width: 1280px;
   margin: 0 auto;
   text-align: center;
+}
+
+article {
+  border-bottom: var(--border-bottom);
+  padding: 20px;
+}
+
+.main-article {
+  background-image: var(--yellow-white);
+}
+
+h3 {
+  font-size: 30px;
+  padding: 5px;
+}
+
+p {
 }
 
 /*Assortment of items img used in shop*/
