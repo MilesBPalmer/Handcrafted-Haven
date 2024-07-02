@@ -15,3 +15,6 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll(".featured-img");
 hiddenElements.forEach((el) => observer.observe(el));
+
+// Makes user scroll to the top smoothing with a click on the button
+const toTop = () => window.scrollTo({ top: 0, behavior: "smooth" });

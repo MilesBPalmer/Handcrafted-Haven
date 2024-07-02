@@ -114,6 +114,10 @@ html {
   border-style: none;
 }
 
+.search:hover {
+  animation: pulse-animation 4s infinite;
+}
+
 .search-icon {
   width: 25px;
   position: absolute;
@@ -208,6 +212,8 @@ header.banner {
   background-color: var(--Yellow);
   border-radius: 10px;
   color: #000;
+  animation-name: pickProduct;
+  animation-duration: 4s;
 }
 
 .pickProduct a:link {
@@ -481,6 +487,15 @@ input[type="contactSubmit"]:hover {
   padding: 0 50px 0 50px;
 }
 
+.back-to-top {
+  color: black;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin-left: 7.2px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
 /* About us Page End*/ /* About us Page End*/
 /* About us Page End*/ /* About us Page End*/
 /* About us Page End*/ /* About us Page End*/
@@ -515,4 +530,52 @@ input[type="contactSubmit"]:hover {
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
+}
+
+/* Animation for all the pulse */
+
+@keyframes pulse-animation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Animates the hover on second nav */
+/* Animates the hover on second nav */
+/* Animates the hover on second nav */
+
+@keyframes pickProduct {
+  0% {
+    background-color: var(--Green);
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: var(--Ivory);
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: var(--Yellow);
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: var(--Green);
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: var(--Ivory);
+    left: 0px;
+    top: 0px;
+  }
 }
