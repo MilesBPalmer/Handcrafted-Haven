@@ -348,7 +348,11 @@ p {
 }
 
 .gallery:hover {
-  border: 1px solid #009b4d;
+  animation: pulse-animation 4s infinite;
+}
+
+.allgallery img:hover {
+  border: 3px solid var(--Indigo);
 }
 
 .gallery img {
@@ -365,8 +369,8 @@ p {
 /* Shop Price Table Code */
 /* Price Table Columns & Alignment */
 .priceTableColumns {
-  float: left;
-  width: 33.3%;
+  display: inline-block;
+  width: 32%;
   padding: 8px;
 }
 /* Price Table Unordered List & Items */
@@ -414,6 +418,14 @@ p {
   text-decoration: none;
   font-size: 18px;
   border-radius: 10%;
+}
+
+.columnsblock {
+  display: block;
+}
+
+.allgallery {
+  display: inline-block;
 }
 
 /*END Gallery*/
@@ -497,7 +509,8 @@ input[type="contactSubmit"]:hover {
   background-color: #ffcc00;
 }
 
-.background-button {
+.button-block {
+  margin: 10px 0 10px 0;
 }
 
 /* About us Page End*/ /* About us Page End*/
@@ -544,7 +557,7 @@ input[type="contactSubmit"]:hover {
   }
 
   50% {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   100% {
