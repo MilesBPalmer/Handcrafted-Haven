@@ -339,16 +339,25 @@ p {
 }
 
 /*Shop Image Gallery Code*/
+.galleryFull {
+  justify-content: center;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
 .gallery {
   margin: 5px;
   border: 1px;
   border-radius: 10%;
   float: left;
+  margin-left: 5px;
   width: 24%;
 }
 
 .gallery:hover {
-  border: 1px solid #009b4d;
+  box-shadow: 0 8px 12px 10px rgba(0, 0, 0, 0.5);
 }
 
 .gallery img {
@@ -358,7 +367,6 @@ p {
 }
 
 .galleryDesc {
-  padding: 15px;
   text-align: center;
 }
 
@@ -498,6 +506,10 @@ input[type="contactSubmit"]:hover {
 }
 
 .background-button {
+  justify-content: center;
+  width: 100%;
+  display: inline-block;
+  border: 5px solid #fff;
 }
 
 /* About us Page End*/ /* About us Page End*/
