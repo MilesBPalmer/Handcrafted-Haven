@@ -354,9 +354,11 @@ p {
   float: left;
   margin-left: 5px;
   width: 24%;
+  border: 1px solid transparent;
 }
 
 .gallery:hover {
+  border: 1px solid black;
   box-shadow: 0 8px 12px 10px rgba(0, 0, 0, 0.5);
 }
 
